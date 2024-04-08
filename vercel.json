@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/2_home_page/home-page.html"}
+    ]
+}
