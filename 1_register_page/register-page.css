@@ -1,0 +1,93 @@
+@font-face { 
+    font-family: 'Techno'; src: url('../assets/TechnoCharm-DemoVersion-Regular.otf');   
+}
+@font-face { 
+    font-family: 'Digital'; src: url('../assets/Digital\ Cards\ Demo.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    max-width: fit-content;
+    width: 100%;
+    background-color: #525252;
+    padding: 20px 5px;
+    color: white;
+    font-family: 'Techno';
+}
+.container .allgadget{
+    font-family: 'Digital';
+}
+.container input{
+    font-family: 'Techno';
+    font-size: larger;
+}
+.container .title{
+    display: grid;
+    font-size: xxx-large;
+    align-items: center;
+    justify-content: center;
+}
+.container .sub-container{
+    padding: 2vh 2vh;
+}
+.container .title-container{
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+}
+.container .bottom-container{
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    text-align: center;
+}
+.container .submit-button #submit-id{
+    font-family: 'Techno';
+    font-size: larger;
+}
+.container #hyper-link{
+    color: white;
+}
+.container .user-info label{
+    font-size: larger;
+}
+.container .user-info .input-box{
+    padding: 1.5vh 1vh;
+}
+.container .gender-info{
+    padding: 1vh 1vh;
+}
+.container .user-info .type-text{
+    float: right;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+    .container .allgadget{
+        display: grid;
+        font-size: 21px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+

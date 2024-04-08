@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllGadget</title>
+    <link rel="stylesheet" href="register-page.css">
+    <script src="register-page.js" defer></script>
+</head>
+<body>
+    <img class="background" src="../assets/register-bg.jpeg" alt="">
+    
+    <div class="container" >
+        <h2 class="allgadget">ALLGADGET</h1>
+        <div class="sub-container">
+            <div class="title-container">
+                <div class="title">Register</div>
+            </div>
+            <br>
+             
+            <form action="">
+                <div class="user-info">
+                    <div class="input-box">
+                        <label for="name-input">Name</label>
+                        <input type="text" required id="name-input" class="type-text">
+                    </div>
+                    <div class="input-box">
+                        <label for="mail-input">E-Mail</label>
+                        <input type="text" required id="mail-input" class="type-text">
+                    </div>
+                    <div class="input-box">
+                        <label for="phone-input">Phone</label>
+                        <input type="text" required id="phone-input" class="type-text">
+                    </div>
+                    <div class="input-box">
+                        <label for="pass-input">Password</label>
+                        <input type="text" required id="pass-input" class="type-text">
+                    </div>
+                    <div class="input-box" id="gender">
+                        <label for="input-gender">
+                            Gender 
+                            &emsp; &emsp; &emsp;
+                            <input type="radio" id="male-id" required> Male
+                        </label>
+                        <label for="input-gender">
+                            &emsp;
+                            <input type="radio" id="female-id" required> Female
+                        </label>
+                    </div>
+
+                    <div class="bottom-container">
+                        <div class="aot-info">  
+                            <label for="aot" class="aot-hyper">
+                                <input type="checkbox" id="agreement" required>
+                                I agree to the 
+                                <a href="" id="hyper-link">terms and conditions</a>
+                                <br>
+                                and the 
+                                 <a href="" id="hyper-link">privacy policy</a>
+                            </label>
+                        </div>
+                        <br>
+                        <a class="submit-button" href="../2_home_page/home-page.html">
+                            <button id="submit-id">CREATE ACCOUNT</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

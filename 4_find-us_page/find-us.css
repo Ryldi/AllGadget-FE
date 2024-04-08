@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face { 
+    font-family: 'Techno'; src: url('../assets/TechnoCharm-DemoVersion-Regular.otf');   
+}
+@font-face { 
+    font-family: 'Digital'; src: url('../assets/Digital\ Cards\ Demo.otf');
+}
+
+body{
+    background-color: black;
+    display: grid;
+}
+
+/* NAVIGATION BAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #525252;
+    padding: 3vh 5vh;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+.navbar .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .left .allgadget{
+    font-family: 'Digital';
+    color: white;
+    font-size: smaller;
+    text-decoration: none;
+}
+.navbar .left .text{
+    font-family: 'Techno';
+    color: white;
+    font-size: larger;
+}
+.navbar .right{
+    display: flex;
+    gap: 40px;
+    font-family: 'Techno';
+}
+.navbar .right .text{
+    color: white;
+    text-decoration: none;
+}
+.navbar .right .default{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    background-color: white;
+    border-radius: 8px;
+}
+.navbar .toggle-button{
+    display: none;
+}
+.navbar .toggle-button .menu-bar{
+    width: 28px;
+}
+
+.navbar .right > .text:hover{
+    font-size: larger;
+    color: rgb(172, 172, 172);
+}
+
+.drop-down-menu{
+    position: fixed;
+    right: 2rem;
+    color: white;
+    top: 65px;
+    right: 5px;
+    height: 0;
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 5px;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drop-down-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-down-menu .text{
+    color: white;
+    font-family: 'Techno';
+    text-decoration: none;
+}
+.drop-down-menu.open{
+    height: 165.76px;
+}
+.drop-down-menu.open .default{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Techno';
+}
+
+/* STORE */
+
+.store-container{
+    display: grid;
+    padding-top: 65px;
+}
+.store-container .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.store-container .image-container img{
+    width: 100%;
+    opacity: 60%;
+}
+.store-container .row-1{
+    font-family: 'Digital';
+}
+.store-container .row-2{
+    font-family: 'Techno';
+}
+.store-container .row-3{
+    font-family: 'Techno';
+}
+
+.place-details{
+    background-color: #525252;
+    color: white;
+    padding: 10vh;
+}
+.place-details #text{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+/* FOOTER */
+footer{
+    background: #525252;
+    height: auto;
+    width: auto;
+    color: white;
+
+    list-style-type: none;
+}
+.footer-content{
+    margin: 20px 20px;
+}
+.footer-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 10px;
+}
+.footer-content .allgadget{
+    font-family: 'Digital';
+}
+.footer-content .slogan{
+    font-family: 'Techno';
+    font-size: x-large;
+}
+.footer-content .row-2 img{
+    width: 35px;
+}
+.footer-content .row-3 .term{
+    font-family: 'Techno';
+    color: white;
+    text-decoration: none;
+}
+.footer-content .row-3 .policy{
+    font-family: 'Techno';
+    color: white;
+    text-decoration: none;
+}
+.footer-content .row-3 img{
+    width: 10px;
+}
+.footer-content .row-4{
+    color: #393939;
+    font-family: 'Techno';
+}
+.footer-content .row-4 img{
+    width: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .left p:nth-child(2){
+        display: none;
+    }
+    .left p:nth-child(3){
+        display: none;
+    }
+    .navbar .right a{
+        display: none;
+    }
+    .navbar .right .toggle-button{
+        display: block;
+    }
+    .drop-down-menu{
+        display: block;
+    }
+    .footer-content .row-1 .slogan{
+        display: none;
+    }
+    .store-container .image-container{
+        display: grid;
+    }
+}
